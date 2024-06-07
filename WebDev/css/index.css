@@ -53,6 +53,28 @@ nav a:hover {
     border-top: 1px solid #ccc;
 }
 
+#modal {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#areaModal {
+    position: fixed;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+
 .footer button {
     margin-top: 10px;
     padding: 10px 20px;
