@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/pesquisa.css">
+
+    <title>Pesquisa</title>
+
+</head>
+
+<body>
+
+<header>
+    <img alt="Imagem enchentes RS" height="300" src="../img/sos-rs.png" usemap="#workmap" width="500">
+    <h1> Inundações Rio Grande do Sul 2024 </h1>
+</header>
+
+<nav>
+    <a href="#Informações">Informações</a>
+    <a href="#O que Doar?">O que Doar?</a>
+    <a href="#Dados Atualizados">Dados Atualizados</a>
+    <a href="pesquisa.html">Participe da Pesquisa</a>
+</nav>
+
+    <div>
+        <h4>O objetivo desta pesquisa é reunir dados, de forma anônima, <br>
+            a fim de buscar uma maior compreensão sobre os impactos diretos e indiretos das enchentes</h4>
+    </div>
+
+    <form>
+
+        <div class="form-item">
+            <p><b>Dados da sua residência</b></p>
+            <select>
+                <option selected disabled value="">
+                    Selecione sua cidade
+                </option>
+                <option value="bento-goncalves">
+                    Bento Gonçalves
+                </option>
+                <option value="bom-principio">
+                    Bom Princípio
+                </option>
+                <option value="campo-bom">
+                    Campo Bom
+                </option>
+                <option value="canela">
+                    Canela
+                </option>
+                <option value="caxias-do-sul">
+                    Caxias do Sul
+                </option>
+                <option value="colinas">
+                    Colinas
+                </option>
+                <option value="esteio">
+                    Esteio
+                </option>
+                <option value="igrejinha">
+                    Igrejinha
+                </option>
+                <option value="lajeado">
+                    Lajeado
+                </option>
+                <option value="mucum">
+                    Muçum
+                </option>
+                <option value="novo-hamburgo">
+                    Novo Hamburgo
+                </option>
+                <option value="passo-fundo">
+                    Passo Fundo
+                </option>
+                <option value="porto-alegre">
+                    Porto Alegre
+                </option>
+                <option value="roca-sales">
+                    Roca Sales
+                </option>
+                <option value="santa-tereza">
+                    Santa Tereza
+                </option>
+                <option value="sao-leopoldo">
+                    São Leopoldo
+                </option>
+                <option value="sao-sebastiao-do-cai">
+                    São Sebastião do Caí
+                </option>
+                <option value="sapiranga">
+                    Sapiranga
+                </option>
+                <option value="taquari">
+                    Taquari
+                </option>
+                <option value="tres-arroios">
+                    Três Arroios
+                </option>
+                <option value="venancio-aires">
+                    Venâncio Aires
+                </option>
+            </select>
+            <select>
+                <option selected disabled value="">
+                    Tipo de moradia
+                </option>
+                <option value="casa">
+                    Casa
+                </option>
+                <option value="apartamento">
+                    Apartamento
+                </option>
+            </select>
+            <select>
+                <option selected disabled value="">
+                    Número de adultos
+                </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3 ou mais</option>
+            </select>
+            <select>
+                <option selected disabled value="">
+                    Número de crianças
+                </option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3 ou mais</option>
+            </select>
+        </div>
+
+        <div class="form-item">
+            <p><b>De que maneira sua residência foi afetada?</b></p>
+
+            <input type="radio" name="maneiras" id="nivel-agua" value="nivel-agua">
+            <label for="nivel-agua"><small>Aumento do nível da água</small></label>
+
+            <input type="radio" name="maneiras" id="deslizamento" value="deslizamentos">
+            <label for="deslizamento"><small>Deslizamento de terras</small></label>
+
+            <input type="radio" name="maneiras" id="nao-foi" value="nao-foi">
+            <label for="nao-foi"><small>Não fui afetado diretamente</small></label>
+        </div>
+
+        <div class="form-item">
+            <p><b>Caso tu tenhas precisado sair da tua residência, para onde tu foste?</b></p>
+
+            <input type="radio" name="refugios" id="abrigo-municipal" value="abrigo-municipal">
+            <label for="abrigo-municipal"><small>Abrigo municipal</small></label>
+
+            <input type="radio" name="refugios" id="residencia-parente" value="residencia-parente-">
+            <label for="residencia-parente"><small>Residência de parentes</small></label>
+
+            <input type="radio" name="refugios" id="residencia-amigo" value="residencia-amigo">
+            <label for="residencia-amigo"><small>Residência de amigos</small></label>
+        </div>
+
+        <div class="form-item">
+            <p><b>Caso tu não tenhas sido afetado diretamente, a qual ou <br>a quais serviços tu perdeste acesso?</b>
+            </p>
+
+            <div id="servicos-itens">
+                <input type="checkbox" id="energia-eletrica" value="energia-eletrica">
+                <label for="energia-eletrica"><small>Energia Elétrica</small></label>
+                <br>
+                <br>
+                <input type="checkbox" id="internet" value="internet">
+                <label for="internet"><small>Internet</small></label>
+                <br>
+                <br>
+                <input type="checkbox" id="agua-potavel" value="agua-potavel">
+                <label for="agua-potavel"><small>Água Potável</small></label>
+                <br>
+                <br>
+                <input type="checkbox" id="tv" value="tv">
+                <label for="tv"><small>TV a Cabo</small></label>
+                <br>
+                <br>
+                <input type="checkbox" id="transporte-publico" value="transporte-publico">
+                <label for="transporte-publico"><small>Transporte Público</small></label>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <p><b>Sinta-se à vontade para compartilhar <br>
+                algum relato, opinião ou informação sobre a situação</b></p>
+            <textarea rows="12" cols="61" placeholder="escreva aqui" style="resize: none"></textarea>
+        </div>
+
+        <button type="submit">Enviar pesquisa</button>
+
+    </form>
+
+    <div class="footer">
+        <p>Desenvolvido por: Nossos nomes ? ideias? </p>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Voltar para o Início</button>
+    </div>
+
+</body>
+
+</html>
