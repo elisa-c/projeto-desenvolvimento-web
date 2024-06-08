@@ -8,7 +8,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/pesquisa.css">
-
+    <script src="index.js"></script>
     <title>Pesquisa</title>
 
 </head>
@@ -21,8 +21,8 @@
 </header>
 
 <nav>
-    <a href="#Informações">Informações</a>
-    <a href="#O que Doar?">O que Doar?</a>
+    <a href="index.html">Informações</a>
+    <button onclick = "abrirModal()">O que doar?</button>
     <a href="#Dados Atualizados">Dados Atualizados</a>
     <a href="pesquisa.html">Participe da Pesquisa</a>
 </nav>
@@ -30,6 +30,30 @@
     <div>
         <h4>O objetivo desta pesquisa é reunir dados, de forma anônima, <br>
             a fim de buscar uma maior compreensão sobre os impactos diretos e indiretos das enchentes</h4>
+    </div>
+
+    <div id="modal">
+        <div id="areaModal">
+            <header>
+                <h2>Doações mais necessárias no momento</h2>
+            </header>
+            <section id="conteudoModal">
+                <ul>
+                    <li>Cesta básica;</li>
+                    <li>Cobertores;</li>
+                    <li>Roupas íntimas novas (masculinas e femininas);</li>
+                    <li>Meias;</li>
+                    <li>Sabão em pó;</li>
+                    <li>Escova e pasta de dente;</li>
+                    <li>desodorante;</li>
+                    <li>xampu;</li>
+                    <div> <p>Fonte e outros donativos necessários: <a href="https://sosenchentes.rs.gov.br/doacoes-em-geral" target="_blank">sosenchentes.rs.gov.br/doacoes-em-geral</a></p> </div>
+                </ul>
+            </section>
+            <footer>
+                <button onclick="fecharModal()">Fechar</button>
+            </footer>
+        </div>
     </div>
 
     <form>
@@ -189,7 +213,7 @@
         <div class="form-item">
             <p><b>Sinta-se à vontade para compartilhar <br>
                 algum relato, opinião ou informação sobre a situação</b></p>
-            <textarea rows="12" cols="61" placeholder="escreva aqui" style="resize: none"></textarea>
+            <textarea rows="12" cols="61" placeholder="Escreva aqui" style="resize: none"></textarea>
         </div>
 
         <button type="submit">Enviar pesquisa</button>
