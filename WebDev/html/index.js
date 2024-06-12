@@ -8,3 +8,8 @@ function fecharModal() {
     let modal = document.getElementById('modal');
     modal.style.display = 'none';
 }
+
+function abrirModalSucesso() {
+    let modal = document.getElementById('modalSucesso');
+    modal.style.display = 'block'
+}
