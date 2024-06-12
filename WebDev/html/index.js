@@ -12,3 +12,8 @@ function fecharModal() {
 $(document).ready(function() {
     $('.carousel').carousel();
 });
+
+function abrirModalSucesso() {
+    let modal = document.getElementById('modalSucesso');
+    modal.style.display = 'block'
+}

@@ -216,9 +216,23 @@
             <textarea rows="12" cols="61" placeholder="Escreva aqui" style="resize: none"></textarea>
         </div>
 
-        <button type="submit">Enviar pesquisa</button>
+        <button type="button" onclick="abrirModalSucesso()">Enviar pesquisa</button>
 
     </form>
+
+    <div id="modalSucesso">
+        <div id="areaModalSucesso">
+            <header>
+                <h2>Obrigada!</h2>
+            </header>
+            <section id="conteudoModal">
+                Suas respostas foram registradas. 
+            </section>
+            <footer>
+                <button onclick="fecharModalSucesso">Fechar</button>
+            </footer>
+        </div>
+    </div>
 
     <div class="footer">
         <p>Desenvolvido por: Nossos nomes ? ideias? </p>
