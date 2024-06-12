@@ -8,3 +8,7 @@ function fecharModal() {
     let modal = document.getElementById('modal');
     modal.style.display = 'none';
 }
+
+$(document).ready(function() {
+    $('.carousel').carousel();
+});
