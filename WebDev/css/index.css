@@ -12,8 +12,11 @@ header {
   top: 10px;
 
 }
+
 header h1 {
   margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
 
 nav {
@@ -131,7 +134,7 @@ nav a:hover {
 }
 
 .sidebar-direita {
-  flex: 1.5;
+  flex: 1.2;
   padding: 15px;
   background-color: #f1f1f1;
   display: flex;
@@ -148,7 +151,6 @@ nav a:hover {
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 8px;
-  font-size: 25px;
 }
 
 .panel {
