@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados Atualizados - Inundações RS</title>
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/dadosatualizados.css" rel="stylesheet">
+    <script src="index.js"></script>
 
 <body>
     <header>
@@ -26,18 +27,66 @@
             <div id="map"></div>
         </div>
         <div class="sidebar-direita">
-            <h2>Notícias mais relevantes</h2>
-            <div id="links-sidebar">
-                <ul>
-                    <li><a href="https://www.tvpampa.com.br/saiba-onde-serao-as-primeiras-cidades-provisorias-para-quem-perdeu-residencia-nas-enchentes-do-rs/">Saiba onde serão as primeiras "cidades provisórias" para quem perdeu residência nas enchentes do RS</a></li>
-                    <br>
-                    <li><a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/06/05/com-mais-duas-mortes-confirmadas-rs-chega-a-15-obitos-por-leptospirose-apos-enchentes.ghtml">Com mais duas mortes confirmadas, RS chega a 15 óbitos por leptospirose após enchentes</a></li>
-                    <br>
-                    <li><a href="https://estado.rs.gov.br/mais-de-206-mil-propriedades-rurais-foram-afetadas-pelas-enchentes-no-rs">Mais de 206 mil propriedades rurais foram afetadas pelas enchentes no RS</a></li>
-                    <br>
-                    <a href="https://www.google.com/search?q=Enchentes+Rio+Grande+do+Sul+2024&sca_esv=9a34e8c41d0ab117&biw=1440&bih=740&tbm=nws&sxsrf=ADLYWIKV4SuALf7jzcS3zK5-19G-7u3KsQ%3A1717725458743&ei=EmliZuaFLfyK5OUPvqWuuAw&udm=&ved=0ahUKEwjm1qj-sciGAxV8BbkGHb6SC8cQ4dUDCAw&uact=5&oq=Enchentes+Rio+Grande+do+Sul+2024&gs_lp=Egxnd3Mtd2l6LW5ld3MiIEVuY2hlbnRlcyBSaW8gR3JhbmRlIGRvIFN1bCAyMDI0MgQQABgeMgYQABgFGB4yCBAAGIAEGKIEMggQABiABBiiBEjqVFCRB1i4RXAAeACQAQCYAZ8BoAHdCaoBAzAuObgBA8gBAPgBAZgCCKAC_AjCAgYQABgNGB7CAggQABgFGA0YHpgDAIgGAZIHAzAuOKAH0CI&sclient=gws-wiz-news">Clique para mais</a>
-                </ul>
+            <div class="sidebar-header-direita"> 
+                <div class="panel"></div>           
+                <h3>Notícias mais relevantes</h3>
             </div>
+            <div id="links-sidebar-direita">
+                <ul>
+                    <li>
+                        <div class="noticia-item">
+                            <img src="../img/abrigos.jpg" alt="Imagem da notícia 1" class="noticia-img">
+                            <div class="noticia-content">
+                                <h6><strong>ABRIGOS</strong></h6>
+                                <a href="https://www.tvpampa.com.br/saiba-onde-serao-as-primeiras-cidades-provisorias-para-quem-perdeu-residencia-nas-enchentes-do-rs/">Saiba onde serão as primeiras "cidades provisórias" para quem perdeu residência nas enchentes do RS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="noticia-item">
+                            <img src="../img/alagamento.jpg" alt="Imagem da notícia 2" class="noticia-img">
+                            <div class="noticia-content">
+                                <h6><strong>CONTAMINAÇÃO</strong></h6>
+                                <a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/06/05/com-mais-duas-mortes-confirmadas-rs-chega-a-15-obitos-por-leptospirose-apos-enchentes.ghtml">Com mais duas mortes confirmadas, RS chega a 15 óbitos por leptospirose após enchentes</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="noticia-item">
+                            <img src="../img/enchentes.jpg" alt="Imagem da notícia 3" class="noticia-img">
+                            <div class="noticia-content">
+                                <h6><strong>INFRAESTRUTURA</strong></h6>
+                                <a href="https://estado.rs.gov.br/mais-de-206-mil-propriedades-rurais-foram-afetadas-pelas-enchentes-no-rs">Mais de 206 mil propriedades rurais foram afetadas pelas enchentes no RS</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <p><a href="https://www.google.com/search?q=Enchentes+Rio+Grande+do+Sul+2024&sca_esv=9a34e8c41d0ab117&biw=1440&bih=740&tbm=nws&sxsrf=ADLYWIKV4SuALf7jzcS3zK5-19G-7u3KsQ%3A1717725458743&ei=EmliZuaFLfyK5OUPvqWuuAw&udm=&ved=0ahUKEwjm1qj-sciGAxV8BbkGHb6SC8cQ4dUDCAw&uact=5&oq=Enchentes+Rio+Grande+do+Sul+2024&gs_lp=Egxnd3Mtd2l6LW5ld3MiIEVuY2hlbnRlcyBSaW8gR3JhbmRlIGRvIFN1bCAyMDI0MgQQABgeMgYQABgFGB4yCBAAGIAEGKIEMggQABiABBiiBEjqVFCRB1i4RXAAeACQAQCYAZ8BoAHdCaoBAzAuObgBA8gBAPgBAZgCCKAC_AjCAgYQABgNGB7CAggQABgFGA0YHpgDAIgGAZIHAzAuOKAH0CI&sclient=gws-wiz-news">Clique para mais</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal">
+        <div id="areaModal">
+            <header>
+                <h2>Doações mais necessárias no momento</h2>
+            </header>
+            <section id="conteudoModal">
+                <ul>
+                    <li>Cesta básica;</li>
+                    <li>Cobertores;</li>
+                    <li>Roupas íntimas novas (masculinas e femininas);</li>
+                    <li>Meias;</li>
+                    <li>Sabão em pó;</li>
+                    <li>Escova e pasta de dente;</li>
+                    <li>desodorante;</li>
+                    <li>xampu;</li>
+                    <div> <p>Fonte e outros donativos necessários: <a href="https://sosenchentes.rs.gov.br/doacoes-em-geral" target="_blank">sosenchentes.rs.gov.br/doacoes-em-geral</a></p> </div>
+                </ul>
+            </section>
+            <footer>
+                <button onclick="fecharModal()">Fechar</button>
+            </footer>
         </div>
     </div>
 
