@@ -363,6 +363,9 @@ nav a:hover {
 
 #imagem-nivel-rios {
   text-align: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 #img-sos {
